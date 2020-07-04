@@ -1,10 +1,16 @@
 const express = require('express');
 const dotenv = require('dotenv');
 
+// Route files
+const classes = require('./routes/classes');
+
 // Load env vars
 dotenv.config({ path: './config/config.env' });
 
 const app = express();
+
+// Mount routers
+app.use('/api/v1/classes', classes);
 
 const PORT = process.env.PORT || 5000;
 
