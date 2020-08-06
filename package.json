@@ -5,7 +5,8 @@
     "main": "server.js",
     "scripts": {
         "start": "SET NODE_ENV=production & node server",
-        "dev": "nodemon server"
+        "dev": "nodemon server",
+        "cz": "git-cz"
     },
     "author": "Devin Herath",
     "license": "MIT",
@@ -19,6 +20,15 @@
         "slugify": "^1.4.4"
     },
     "devDependencies": {
+        "@commitlint/cli": "^9.1.1",
+        "@commitlint/config-conventional": "^9.1.1",
+        "cz-conventional-changelog": "^3.2.0",
+        "husky": "^4.2.5",
         "nodemon": "^2.0.4"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
     }
 }
