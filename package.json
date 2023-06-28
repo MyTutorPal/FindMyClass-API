@@ -20,7 +20,7 @@
         "slugify": "^1.4.4"
     },
     "devDependencies": {
-        "@commitlint/cli": "^9.1.1",
+        "@commitlint/cli": "^9.1.2",
         "@commitlint/config-conventional": "^17.6.5",
         "cz-conventional-changelog": "^3.2.0",
         "husky": "^4.2.5",
